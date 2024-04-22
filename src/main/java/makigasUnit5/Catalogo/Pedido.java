@@ -1,12 +1,13 @@
 package makigasUnit5.Catalogo;
 
+
+
 import makigasUnit5.pagos.PagoException;
 import makigasUnit5.pagos.ProveedorPagos;
 
 import java.util.ArrayList;
 import java.util.List;
-
-public class pedido implements Carrito,pagable {
+public class Pedido implements Carrito, pagable{
     private final List<Producto> productos = new ArrayList<>();
 
     @Override
@@ -35,5 +36,6 @@ public class pedido implements Carrito,pagable {
     public void pagar(ProveedorPagos pagos) throws PagoException {
 
     }
-}
 
+
+}
