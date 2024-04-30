@@ -34,7 +34,7 @@ public class PerdidoTest {
     @DisplayName("Pedido con 0 productos")
     void testCantidad1() {
         // vamos a probar que cuando el pedido está vacío la cantidad que devuelve es 0
-        assertEquals(0,pedido.);
+        assertEquals(0,pedido.cantidad());
     }
 
     @Test
@@ -43,7 +43,7 @@ public class PerdidoTest {
         // para probar el método cantidad necesito un objeto de tipo Pedido con una serie de productos añadidos
         pedido.agregar(p1);
 
-        assertEquals(1, pedido.c);
+        assertEquals(1, pedido.cantidad());
     }
 
     @Test
