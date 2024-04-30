@@ -1,9 +1,7 @@
-package EjercicioCajaNegra;
+package EjercicioCajaNegra.Ejercicio1;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import EjercicioCajaNegra.Ejercicio1.Excursion;
+import org.junit.jupiter.api.*;
 
 class ExcursionTest {
 
@@ -21,7 +19,7 @@ class ExcursionTest {
     @DisplayName("precio alumno: 100 alumnos")
     void calcularPrecioAlumno1() {
         e = new Excursion(100); // instancio el objeto excursión con 100 alumnos
-        assertEquals(65, e.calcularPrecioAlumno());
+        Assertions.assertEquals(65, e.CalcularPrecioAlumno());
     }
 
     @Test
